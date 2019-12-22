@@ -10,10 +10,12 @@
 """
 
 def get_summ(num_one, num_two):
-    """
-    Замените pass на ваш код
-    """
-    pass
+    try:
+        v_num_one = int(num_one)
+        v_num_two = int(num_two)
+        return str(v_num_one+v_num_two)
+    except ValueError:
+        return "приведение типов не сработало"
     
 if __name__ == "__main__":
     print(get_summ(2, 2))
